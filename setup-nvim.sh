@@ -13,15 +13,15 @@ sudo dpkg -i --force-overwrite  nvim-linux64.deb
 
 cd ../..
 
-#wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
-sudo mkdir -p ~/.local/share/fonts
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+mkdir -p ~/.local/share/fonts
 cd ~/.local/share/fonts 
-sudo unzip JetBrainsMono.zip 
-sudo rm JetBrainsMono.zip 
+unzip JetBrainsMono.zip 
+rm JetBrainsMono.zip 
 sudo fc-cache -fv
 
 cd -
 
-sudo mkdir -p ~/.config
-sudo cp -rf ./nvim ~/.config/
+mkdir -p ~/.config
+cp -rf ./nvim ~/.config/
 
